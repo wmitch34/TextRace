@@ -1,0 +1,54 @@
+#userInput{
+    min-width: 100%;
+    min-height: 30%;
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+#btnwrapper{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    min-width: 100%;
+    min-height: 10%;
+}
+#submitbtn{
+    display: none;
+}
+#beginbtn{
+    min-width: 50%;
+    min-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#resetbtn{
+    min-width: 50%;
+    min-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#wpm{
+    font-size: 2rem;
+    display: none;
+}
+
+#countdown_timer{
+    font-size: 3rem;
+    display: none;
+}
+#problem{
+    min-width: 80%;
+    text-align: center;
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline;
+    
+}
+
+#wrapper{
+    /* why doesnt this work */
+    margin-left: auto;
+    margin-right: auto;
+}
