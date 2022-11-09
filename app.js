@@ -4,7 +4,10 @@ var index;
 var backup;
 
 function begin(){
+    // if the button is clickable the page will break
     document.getElementById("beginbtn").setAttribute('disabled', 'disabled');
+
+    // save a copy of the original for reset
     backup = document.getElementById("problem").innerHTML;
     simulate();
 }
@@ -44,23 +47,21 @@ async function countdown(){
     document.getElementById("countdown_timer").style.display = "block";
     
     //run countdown
-    display_num(3);
+    let input = document.getElementById("countdown_timer");
+
+    input.innerHTML = 3;
     await delay(1000);
-    display_num(2);
+    input.innerHTML = 2;
     await delay(1000);
-    display_num(1);
+    input.innerHTML = 1;
     await delay(1000);    
-    display_num("Go!");
+    input.innerHTML = "Go";
 }
 
 function delay(milliseconds){
     return new Promise(resolve => {
         setTimeout(resolve, milliseconds);
     });
-}
-
-function display_num(input){
-    document.getElementById("countdown_timer").innerHTML = input;
 }
 
 function calculate_passed_time(start, finish){
