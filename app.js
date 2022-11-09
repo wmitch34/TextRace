@@ -1,8 +1,11 @@
 var start;
 var finish;
 var index;
+var backup;
 
 function begin(){
+    document.getElementById("beginbtn").setAttribute('disabled', 'disabled');
+    backup = document.getElementById("problem").innerHTML;
     simulate();
 }
 
@@ -32,6 +35,8 @@ function reset(){
     document.getElementById("time").innerHTML = "";
     document.getElementById("countdown_timer").style.display = "none";
     document.getElementById('userinput').removeAttribute('readonly');
+    document.getElementById("beginbtn").removeAttribute('disabled', 'disabled');
+    document.getElementById("problem").innerHTML = backup;
 }
 
 async function countdown(){
@@ -95,10 +100,10 @@ async function read_input(){
         }
 
         if(str != cur_input){
-            document.getElementById("problem").innerHTML = "<span style=\"color: red; background-color: yellow;\">"+str+"</span><span style=\"color: black; \">"+remainder+"</span>";
+            document.getElementById("problem").innerHTML = "<span style=\"color: red;\">"+str+"</span><span style=\"color: black;\">"+remainder+"</span>";
             document.getElementById("userinput").style.color = "red";
         }else{
-            document.getElementById("problem").innerHTML = "<span style=\"color: green; \">"+str+"</span><span style=\"color: black;\">"+remainder+"</span>";
+            document.getElementById("problem").innerHTML = "<span style=\"color: green;\">"+str+"</span><span style=\"color: black;\">"+remainder+"</span>";
             document.getElementById("userinput").style.color = "green";
         }
 
