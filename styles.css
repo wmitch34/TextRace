@@ -7,14 +7,11 @@
     display: none;
 }
 #btnwrapper{
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
     display: flex;
     min-width: 100%;
     min-height: 10%;
-}
-#submitbtn{
-    display: none;
 }
 #beginbtn{
     min-width: 50%;
