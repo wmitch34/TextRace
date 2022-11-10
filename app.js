@@ -147,3 +147,17 @@ function postResults(start){
 
     document.getElementById("countdown_timer").innerHTML = "SUCCESS";
 }
+
+function geteasy(){
+    console.log("Easy")
+    get_sentance()
+}
+function getmed(){
+    console.log("Medium")
+    get_sentance()
+    
+}
+function gethard(){
+    console.log("Hard")
+    get_sentance()
+}
