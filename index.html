@@ -5,7 +5,22 @@
         <script src="app.js"></script>
     </head>
     <body>
-        <div id = "problem" >The fat cat sat on the mat bat away with paws fight an alligator and win yet eat grass, throw it back up so hack.</div>
+        <H1>Welcome to type racer! </H1>
+        <p>Select a dificulty and press "begin". The timer will count down from 3 to 1.
+        Type out text that EXACTLY matches the paragraph below to see your words per minute typed!</p>
+
+        <form>
+            <input type="radio" name = "dificulty" id="easy" value="easy"checked = "checked">
+            <label for="easy">easy</label>
+            <input type="radio" name = "dificulty" id="medium" value="medium">
+            <label for="medium">medium</label>
+            <input type="radio"  name = "dificulty" id="hard" value="hard">
+            <label for="hard">hard</label>
+            <br>
+        </form>
+        
+        
+        <div id = "problem" ></div>
         <span id = "btnwrapper">
             <button type="submit" onclick="begin()" id = "beginbtn">Begin</button>
             <button type = "submit" id = "resetbtn" onclick="reset()">Reset</button>
@@ -20,6 +35,7 @@
             <p id="wpm"></p>
         </div>        
         
+        <script>get_sentance()</script>
         
     </body>
 </html>
