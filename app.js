@@ -31,7 +31,7 @@ async function simulate(){
 }
 
 function get_sentance(){
-    let text = "For centuries, kings, queens and generals have relied on efficient communication in order to govern their countries and command their armies.At the same time, they have all been aware of the consequences of their messages falling into the wrong hands, revealing precious secrets to rival nations and betraying vital information to opposing forces.It was the threat of enemy interception that motivated the development of codes and ciphers: techniques for disguising a message so that only the intended recipient can read it.The desire for secrecy has meant that nations have operated codemaking departments, which were responsible for ensuring the security of communications by inventing and implementing the best possible codes. At the same time, enemy codebreakers have attempted to break these codes and steal secrets";
+    let text = "For centuries, kings, queens and generals have relied on efficient communication in order to govern their countries and command their armies.At the same time, they have all been aware of the consequences of their messages falling into the wrong hands, revealing precious secrets to rival nations and betraying vital information to opposing forces.It was the threat of enemy interception that motivated the development of codes and ciphers: techniques for disguising a message so that only the intended recipient can read it.The desire for secrecy has meant that nations have operated codemaking departments, which were responsible for ensuring the security of communications by inventing and implementing the best possible codes.At the same time, enemy codebreakers have attempted to break these codes and steal secrets";
     let textArr = text.split(".");
 
     let myNum = Math.floor(Math.random() * textArr.length);
@@ -77,6 +77,7 @@ function delay(milliseconds){
 }
 
 function calculate_passed_time(start, finish){
+    console.log(start);
     let startArr = start.split(":");
     startArr[2] = startArr[2][0] + startArr[2][1];
     
